@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url("html wallpaper.jpg.png");
+    background-size: cover;
+    color: #4e128f;
+    position: relative;
+}
+
+/* Overlay for readability */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Adjust opacity and color */
+    z-index: -1; /* Place it behind the content */
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background: #4e128f;
+    color: rgb(38, 110, 147);
+    box-shadow: 0 4px 8px rgba(47, 210, 29, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-style: italic;
+    margin: 0.5rem 0 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: #372594;
+}
+
+nav ul li a {
+    color: rgb(240, 56, 237);
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.2);
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    background: rgb(42, 233, 25);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(30, 184, 27, 0.1);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #8030bd;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+.toggle-btn {
+    background: #17bfd1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+    background: #a8e01b;
+}
+
+.content {
+    display: none;
+    margin-top: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
